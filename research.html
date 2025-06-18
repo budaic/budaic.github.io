@@ -1,0 +1,130 @@
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Csanád Budai - Research</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Left Sidebar (Loaded dynamically by JavaScript) -->
+        <nav class="sidebar" id="sidebar-placeholder"></nav>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="content">
+                <h2>Research: End-to-end RL on F1Tenth</h2>
+                
+                <h3>Project Overview</h3>
+                <p>
+                    At HUN-REN SZTAKI, I have been working on developing end-to-end reinforcement learning 
+                    based agents for racing in the <a href="https://f1tenth.org">F1Tenth competition</a>.
+                </p>
+
+                <div class="research-image-container">
+                    <div class="image-pair">
+                        <div class="image-item">
+                            <img src="img/f1tenth_car.png" alt="F1Tenth Racing Car" class="section-image">
+                            <p class="image-caption">The F1Tenth car</p>
+                        </div>
+                        <div class="image-item">
+                            <img src="img/f1control_scheme.svg" alt="F1Tenth Control Scheme" class="section-image">
+                            <p class="image-caption">The control scheme</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <h3>F1Tenth problem</h3>
+                <ul class="technical-list">
+                    <li><strong>Input:</strong> LiDAR sensor data for environmental perception</li>
+                    <li><strong>Output:</strong> Speed and steering commands for vehicle control</li>
+                    <li><strong>Task:</strong> Race autonomously through a track bounded by HVAC tubes, avoiding obstacles and overtaking opponents</li>
+                </ul>
+
+                <h3>Our work</h3>
+                <p>
+                With my friend Tamás Széles we decided to attempt an end-to-end RL approach. No previous team had successfully done this before us.
+                <br>We took the following steps:
+                <ul>
+                    <li>
+                        created a simulator environment from scratch,
+                    </li>
+                    <li>
+                        trained an agent to control the car,
+                    </li>
+                    <li>
+                        created a domain randomization technique to facilitate the transfer,
+                    </li>
+                    <li>
+                        raced the car successfully in the competition.
+                    </li>
+                </ul>
+                Our approach first got 12th place in Yokohama, and after further developement 5th place in Milan. 
+                We are proud that because of its agentic nature, our car was able to do many overtakes during the competition, while even the best teams were rarely able to do so.</p>
+
+                <div class="research-image-container">
+                    <img src="img/f1model-structure-finished.svg" alt="F1Tenth Model Structure" class="section-image" style="max-width: 600px;">
+                    <p class="image-caption">The model structure of our end-to-end RL model</p>
+                </div>
+
+                <div class="note">
+                        <strong>Note:</strong> The full paper accepted to IEEE ACC is not yet published, but you can find the SSC paper at <a href="https://tdk.bme.hu/ConferenceFiles/GPK/2024/Paper/ely-megerositeses-tanulasi-modszerek-az-20241110-235618.pdf?paperId=14054">the BME website</a>. Feel free to reach out to me for the preprint.
+                </div>
+
+                <h3>Key Achievements</h3>
+                <div class="achievements-section">
+                    
+                    <div class="item">
+                        <h4>Competition Results</h4>
+                        <ul>
+                            <li>5th place at 22nd F1TENTH International Competition (Milan, 2024)</li>
+                            <li>12th place at 15th F1TENTH International Competition (Yokohama, 2024)</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="item">
+                        <h4>IEEE American Control Conference Publication</h4>
+                        <p>
+                            "End-to-end Reinforcement Learning for Autonomous Racing: Bridging the sim-to-real gap" - 
+                            Accepted to American Control Conference 2025
+                        </p>
+                    </div>
+
+                    <div class="item">
+                        <h4>Students scientific conference achievemtns</h4>
+                        <p>
+                           We presented our work at the following students scientific conferences, where we won the following prizes:
+                           <ul>
+                            <li><strong>2nd prize</strong> at BME Students Scientific Conference (TDK, Budapest, 2024)</li>
+                            <li><strong>1st prize</strong> at the Hungarian National Students Scientific Conference (OTDK, Budapest, 2025)</li>
+                            <li><strong>1st prize</strong> at the EELISA International Students Scientific Conference (EELISA SSC, Bucharest, Romania, 2025)</li>
+                            </ul>
+                        </p>
+                    </div>
+
+                    <div class="item">
+                        <h4>Technical Innovation</h4>
+                        Our own python simulator environment with:
+                        <ul>
+                            <li>a vehicle model</li>
+                            <li>sensor simulation</li>
+                            <li>domain randomization techniques</li>
+                            <li>techniques for learning with disturbances</li>
+                            <li>support for adversaries</li>
+                            <li>multiple reward mechanisms</li>
+                        </ul>
+                        Trained agents that can:
+                        <ul>
+                            <li>race autonomously effectively, on unseen tracks</li>
+                            <li>overtake opponents</li>
+                            <li>adapt to unseen situations</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+

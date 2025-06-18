@@ -3,41 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Budai Csanád honlapja</title>
+    <title>Csanád Budai - About</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Budai Csanád honlapja</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">Rólam</a></li>
-                <li><a href="#cv">CV</a></li>
-                <li><a href="#linkek">Linkek</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <section id="about">
-        <h2>Rólam</h2>
-        <p>Budai Csanád vagyok, Mechatronikai mérnöki diák a BME-n. Ez a honlapom:)</p>
-    </section>
-    
-    <section id="cv">
-        <h2>CV</h2>
-        <!-- Include your CV here -->
-        <!-- Example: -->
-        <p>Itt találod a CV-met: <a href="budai_csanad_cv.pdf" target="_blank">Download CV</a></p>
-    </section>
-    
-    <section id="linkek">
-        <h2>Linkek</h2>
-        <p>Itt egy pár link, olyan projektethez, amiken dolgozom.</p>
-        <ul>
-			<li><a href="https://sites.google.com/view/fagypontfizika" target="_blank">Fagypont fizikatábor</a></li>
-			<li><a href="http://cogroblab.hu/" target="_blank">Grabovszki Klub honlapja</a></li>
-			<li><a href="http://cogroblab.hu/jegyzetek" target="_blank">Jegyzetek mechatronikai mérnökiről</a></li>
-            <!-- Add more projects as needed -->
-        </ul>
-    </section>
+    <div class="container">
+        <!-- Left Sidebar (Loaded dynamically by JavaScript) -->
+        <nav class="sidebar" id="sidebar-placeholder"></nav>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="content">
+                <h2>About</h2>
+                <img src="img/profile.jpg" alt="Csanád Budai" class="profile-photo">
+                    
+                <div class="about-text">
+                    <p>
+                        Hi! I'm Csanád Gyula Budai, a passionate mechatronics engineering student. My fields of interest are robotics, autonomous systems, and reinforcement learning. 
+                        I'm currently studying at Budapest University of Technology and Economics (BME), and working as a developer and student researcher at the HUN-REN Institute for Computer Science and Control (SZTAKI).
+                    </p>
+                    
+                    <p>
+                        Welcome to my website! I hope you find it useful, reach out to me if you are interested in working together!
+                    </p>
+
+            
+                    
+                    <h3>Research Interests</h3>
+                    <ul class="interests-list">
+                        <li>Robotics: Locomotion, Manipulation, Humanoids</li>
+                        <li>Autonomous Vehicles: Land, Flight, Underwater</li>
+                        <li>Reinforcement Learning</li>
+                    </ul>
+                    
+                    <p>
+                        Find out more about my research, olympiads preparation camps, teaching activities and more on the other pages of this website.
+                    </p>
+                </div>
+                
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
+
